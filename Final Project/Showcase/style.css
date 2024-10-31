@@ -1,0 +1,15 @@
+:root{
+    --primarycolor:#557882;
+    --secondarycolor: #46AFAA;
+    --accentcolor: #9BE1AF;
+    --secondaccent: #E6FAC3;
+}
+
+.navBar
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondarycolor);
+    width: 100%;
+    margin: 0;
+}

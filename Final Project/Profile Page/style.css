@@ -1,20 +1,33 @@
-:root{
+
+    :root{
     --primarycolor:#557882;
     --secondarycolor: #46AFAA;
     --accentcolor: #9BE1AF;
-    --secondaccent: #E6FAC3;
+    --secondaccent: #e8fcc5;
+
+    --main-font: 'sans-serif';
+    --secondary-font: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
 }
 
 .navBar
 {
     display: flex;
     justify-content: space-around;
+    padding: 0.5rem;
     background-color: var(--secondarycolor);
     width: 100%;
     margin: 0;
 
 }
 
+h1
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2, p
+{
+    font-family:sans-serif;
+}
 .Name{
     background-color: var(--primarycolor);
     color: rgb(226, 224, 224);
