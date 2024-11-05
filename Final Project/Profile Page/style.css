@@ -20,21 +20,61 @@
 
 }
 
-h1
+
+.ResumeHeader
 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h2, p
-{
-    font-family:sans-serif;
-}
-.Name{
-    background-color: var(--primarycolor);
-    color: rgb(226, 224, 224);
     display: flex;
     justify-content: center;
-    margin-top: .5rem;
+}
+
+.profileImg
+{
+    margin-top: 0.5rem;
+    position: absolute;
+    border-radius: 50%;
+    border-color: var(--secondarycolor);
+    border-style: solid;
+    left: 20%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.info
+{
+    display: flex;
+    margin-left: 6rem;
+    justify-content: center;
+}
+
+.Name{
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
     width: 100%;
+}
+
+.subtitle
+{
+    position: absolute;
+    left: 20%;
+    color: var(--secondarycolor);
+    font-size: 1rem;
+    font-family: var(--main-font);
+}
+
+.job, .jobinfo
+{
+    display: block;
+    margin-top: 0.5rem; 
+    left: 20%;
+    color: var(--primarycolor);
+    font-family: var(--main-font);
+}
+
+li
+{
+    font-size: 1rem;
 }
 
 body{
