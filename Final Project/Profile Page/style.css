@@ -15,7 +15,6 @@
     justify-content: space-around;
     padding: 0.5rem;
     background-color: var(--secondarycolor);
-    width: 100%;
     margin: 0;
 
 }
@@ -23,18 +22,20 @@
 
 .ResumeHeader
 {
+    margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: center;margin-bottom: 1rem;
 }
 
 .profileImg
 {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     position: absolute;
     border-radius: 50%;
     border-color: var(--secondarycolor);
     border-style: solid;
-    left: 20%;
+    left: 30%;
+    margin-right: 2rem;
     height: 5rem;
     width: 5rem;
 }
@@ -42,41 +43,66 @@
 .info
 {
     display: flex;
-    margin-left: 6rem;
     justify-content: center;
+    
 }
 
 .Name{
+    position: relative;
     color: var(--primarycolor);
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     width: 100%;
+    /* background-color: #46AFAA; */
 }
 
 .subtitle
 {
     position: absolute;
-    left: 20%;
+    left: 30%;
+    margin-right: 2rem;
     color: var(--secondarycolor);
     font-size: 1rem;
     font-family: var(--main-font);
+    /* background-color: blue; */
 }
 
-.job, .jobinfo
+.job, .jobinfo, .school, .schoolinfo
 {
-    display: block;
-    margin-top: 0.5rem; 
-    left: 20%;
+    position: relative;
+    display: flexbox;
+    /* background-color: #e8fcc5; */
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    width: 30%;
     color: var(--primarycolor);
     font-family: var(--main-font);
+}
+
+.jobinfo, .schoolinfo
+{
+    margin-left: 20rem;
+}
+
+.container
+{
+    margin-left: 3rem;
+}
+
+.paragraph
+{
+    position: relative;
+    left: 14%;
+    color: var(--primarycolor);
+    flex-wrap: wrap;
+    width: 40%;
+
 }
 
 li
 {
     font-size: 1rem;
-}
-
-body{
-    /* background-color: var(--secondarycolor); */
+    color: var(--primarycolor);
+    
 }
