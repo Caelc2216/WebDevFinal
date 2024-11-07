@@ -10,8 +10,7 @@
 {
     display: flex;
     justify-content: space-around;
+    padding: 0.5rem;
     background-color: var(--secondarycolor);
-    width: 100%;
     margin: 0;
-
 }
