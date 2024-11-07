@@ -3,6 +3,9 @@
     --secondarycolor: #46AFAA;
     --accentcolor: #9BE1AF;
     --secondaccent: #E6FAC3;
+
+    --main-font: 'sans-serif';
+    --secondary-font: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
 }
 
 .navBar
@@ -13,3 +16,53 @@
     width: 100%;
     margin: 0;
 }
+
+
+.tableDiv
+{
+    width: 100%;
+    
+}
+
+.useColumn
+{
+    width: 70%;
+}
+
+table, tr, td, th, tbody
+{
+    border-style: solid;
+    border-color: var(--primarycolor);
+    border-width: 0.1rem;
+    border-collapse: collapse;
+}
+
+th
+{
+    color: var(--secondaccent);
+    background-color: var(--primarycolor);
+    font-family: var(--main-font);
+}
+
+#table
+{
+    width: 100%;
+    font-family: var(--secondary-font);
+    color: var(--primarycolor);
+}
+
+.tabletitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    color: var(--primarycolor);
+}
+
+h3
+{
+    font-family: var(--main-font);
+    color: var(--primarycolor);
+}
+
