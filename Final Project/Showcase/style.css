@@ -1,67 +1,73 @@
-:root{
-    --primarycolor:#557882;
-    --secondarycolor: #46AFAA;
-    --accentcolor: #9BE1AF;
-    --secondaccent: #E6FAC3;
+:root {
+  --primarycolor: #557882;
+  --secondarycolor: #46afaa;
+  --accentcolor: #9be1af;
+  --secondaccent: #e6fac3;
 
-    --main-font: 'sans-serif';
-    --secondary-font: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+  --main-font: "sans-serif";
+  --secondary-font: "Cambria, Cochin, Georgia, Times, " Times New Roman
+    ", serif";
 }
 
-.navBar
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5rem;
-    background-color: var(--secondarycolor);
-    margin: 0;
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background-color: var(--secondarycolor);
+  margin: 0;
 }
 
-
-.tableDiv
-{
-    width: 100%;
-    
+.tableDiv {
+  width: 100%;
 }
 
-.useColumn
-{
-    width: 70%;
+.useColumn {
+  width: 50%;
 }
 
-table, tr, td, th, tbody
-{
-    border-style: solid;
-    border-color: var(--primarycolor);
-    border-width: 0.1rem;
-    border-collapse: collapse;
+table,
+tr,
+td,
+th,
+tbody {
+  border-style: solid;
+  border-color: var(--primarycolor);
+  border-width: 0.1rem;
+  border-collapse: collapse;
 }
 
-th
-{
-    color: var(--secondaccent);
-    background-color: var(--primarycolor);
-    font-family: var(--main-font);
+th {
+  color: var(--secondaccent);
+  background-color: var(--primarycolor);
+  font-family: var(--main-font);
 }
 
-#table
-{
-    width: 100%;
-    font-family: var(--secondary-font);
-    color: var(--primarycolor);
+#table {
+  width: 100%;
+  font-family: var(--secondary-font);
+  color: var(--primarycolor);
 }
 
-.tabletitle
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--main-font);
-    color: var(--primarycolor);
+.tabletitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+  color: var(--primarycolor);
 }
 
-h3
-{
-    font-family: var(--main-font);
-    color: var(--primarycolor);
+h3 {
+  font-family: var(--main-font);
+  color: var(--primarycolor);
+}
+
+button {
+  display: inline;
+  align-items: end;
+  justify-content: end;
+  /* margin-left: 3rem ; */
+}
+
+.d-none {
+  display: none !important;
 }

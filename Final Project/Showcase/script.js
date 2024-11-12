@@ -10,9 +10,11 @@ for(let i = 0; i < 10; i++)
             
             success: function(response) {
                 let spell = `
-                <tr>
+                <tr id="${index}Row">
                 <td>${response[index].spell}</td>
-                <td>${response[index].use}</td>
+                <div class="DelBTN">
+                <td>${response[index].use}<button id="${index}BTN">Delete</button></td>
+                </div>
                 </tr>`;
                 
                 $('#table').append(spell);
@@ -21,3 +23,12 @@ for(let i = 0; i < 10; i++)
         })
     });
 }
+$(`#0BTN`).on('click', function(){
+    $(`#0Row`).addClass("d-none");
+});
+    // for(let i = 0; i < index; i++)
+    // {
+    //     $(`#${index}BTN`).on('click', function(){
+    //         $(`#${index}Row`).addClass("d-none");
+    //     });
+    // }
