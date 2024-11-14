@@ -12,9 +12,7 @@ for(let i = 0; i < 10; i++)
                 let spell = `
                 <tr id="${index}Row">
                 <td>${response[index].spell}</td>
-                <div class="DelBTN">
-                <td>${response[index].use}<button id="${index}BTN">Delete</button></td>
-                </div>
+                <td>${response[index].use}</td><td style = "border-style: none;"><button class="DelBTN" id="${index}BTN">Delete</button></td>
                 </tr>`;
                 
                 $('#table').append(spell);
@@ -23,12 +21,8 @@ for(let i = 0; i < 10; i++)
         })
     });
 }
-$(`#0BTN`).on('click', function(){
-    $(`#0Row`).addClass("d-none");
+$(document).on('click', '.DelBTN', function() { //Thanks ChatGPT
+    
+    const rowId = $(this).attr('id').replace('BTN', 'Row');
+    $(`#${rowId}`).addClass('d-none'); 
 });
-    // for(let i = 0; i < index; i++)
-    // {
-    //     $(`#${index}BTN`).on('click', function(){
-    //         $(`#${index}Row`).addClass("d-none");
-    //     });
-    // }
