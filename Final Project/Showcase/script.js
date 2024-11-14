@@ -24,5 +24,19 @@ for(let i = 0; i < 10; i++)
 $(document).on('click', '.DelBTN', function() { //Thanks ChatGPT
     
     const rowId = $(this).attr('id').replace('BTN', 'Row');
-    $(`#${rowId}`).addClass('d-none'); 
+    $(`#${rowId}`).addClass('d-none');
+
 });
+
+$('#searchBar').on('keyup', function(){
+    var search = $('#searchBar').val().toLowerCase();
+    $('#table tr').addClass('d-none')
+    $(tr.val().toLowerCase().contains(`${search}`)).toggleClass('d-none')
+
+    if(search=="" || search==null)
+    {
+        $('#table tr').toggleClass('d-none')
+    }
+});
+
+

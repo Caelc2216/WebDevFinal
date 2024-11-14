@@ -65,9 +65,13 @@ button {
   display: inline;
   align-items: end;
   justify-content: end;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
   /* margin-left: 3rem ; */
 }
 
 .d-none {
   display: none !important;
 }
+
+
