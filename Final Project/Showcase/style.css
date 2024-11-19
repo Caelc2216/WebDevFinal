@@ -3,6 +3,7 @@
   --secondarycolor: #46afaa;
   --accentcolor: #9be1af;
   --secondaccent: #e6fac3;
+  --primarycolorHover: #344b52;
 
   --main-font: "sans-serif";
   --secondary-font: "Cambria, Cochin, Georgia, Times, " Times New Roman
@@ -42,10 +43,16 @@ th {
   font-family: var(--main-font);
 }
 
+th:hover{
+  background-color: var(--primarycolorHover);
+  cursor: pointer;
+}
+
 #table {
   width: 100%;
   font-family: var(--secondary-font);
   color: var(--primarycolor);
+  margin-top: 0.5rem;
 }
 
 .tabletitle {

@@ -1,6 +1,6 @@
 let index = 0;
 
-for(let i = 0; i < 10; i++)
+for(let i = 0; i < 11; i++)
 {
 
     $(window).on('load', function(){
@@ -30,13 +30,47 @@ $(document).on('click', '.DelBTN', function() { //Thanks ChatGPT
 
 $('#searchBar').on('keyup', function(){
     var search = $('#searchBar').val().toLowerCase();
-    $('#table tr').addClass('d-none')
-    $(tr.val().toLowerCase().contains(`${search}`)).toggleClass('d-none')
+    $('#table tr').each(function (){
 
-    if(search=="" || search==null)
+        var rowText = $(this).text().toLowerCase();
+        if (rowText.includes(search)) {
+            $(this).removeClass('d-none');
+        } else {
+            $(this).addClass('d-none');
+        }
+        
+        if(search=="" || search==null)
+            {
+                $('#table tr').each(function(){
+                    $(this).removeClass('d-none');
+                });
+            }
+        });
+});
+
+$('#Name').on('click', function(){
+    const names = [];
+    $('#table tr').each(function(){
+        const spellName= $(this).find('td:first').text();
+        names.push($(spellName));
+    });
+    names.sort();
+    $('#table tr').each(function(){
+        $(this).remove();
+    });
+
+    for(let i = 0; i < 11; i++)
     {
-        $('#table tr').toggleClass('d-none')
+        const index = $.inArray(names[i], names);
+        let spell = `
+                <tr id="${index}Row">
+                <td>${[index].spell}</td>
+                <td>${[index].use}</td><td style = "border-style: none;"><button class="DelBTN" id="${index}BTN">Delete</button></td>
+                </tr>`;
+                
+                $('#table').append(spell);
     }
+
 });
 
 
