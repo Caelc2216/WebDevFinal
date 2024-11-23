@@ -77,8 +77,81 @@ button {
   /* margin-left: 3rem ; */
 }
 
-.d-none {
-  display: none !important;
+button :hover{
+cursor: pointer !important;
 }
+
+.success {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--primarycolor);
+  background-color: var(--accentcolor);
+}
+
+.failure {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--secondaccent);
+  background-color: rgb(145, 3, 3);
+}
+
+.d-none {
+  display: none;
+}
+
+.modal
+{
+
+}
+
+.modal-container
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 50%;
+  text-align: center;
+  padding: 5rem;
+  border-radius: 3rem;
+  background-color: var(--accentcolor);
+}
+
+.modal-content
+{
+  display: flex;
+  justify-content:space-around;
+}
+
+#AddItem
+{
+  padding: 0.25rem;
+  width: 4rem;
+}
+
+.cancelBTN
+{
+  margin-top: 1rem;
+  width: 4rem;
+}
+
+
 
 
