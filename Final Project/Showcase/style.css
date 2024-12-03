@@ -37,6 +37,11 @@ tbody {
   border-collapse: collapse;
 }
 
+td
+{
+  padding: 0.5rem;
+}
+
 th {
   color: var(--secondaccent);
   background-color: var(--primarycolor);

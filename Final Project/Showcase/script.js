@@ -1,4 +1,5 @@
 let index = 0;
+let addedItems = [];
 
 for (let i = 0; i < 11; i++) {
   $(window).on("load", function () {
@@ -74,6 +75,12 @@ $(document).ready(function () {
       const rowId = $(this).attr("id").replace("BTN", "Row");
       $(`#${rowId}`).addClass("d-none");
     });
+
+    $("#table").on("click", ".DelBTN", function() { 
+      const rowId = $(this).closest("tr").attr("id"); // Updated selector to get row ID if needed
+      $(this).closest("tr").remove(rowId); // Remove the row
+    });
+    
 
 $("#searchBar").on("keyup", function () {
   var search = $("#searchBar").val().toLowerCase();
@@ -214,6 +221,8 @@ $('#AddItem').on('click', function(){
                             </td>
                         </tr>`
     );
+
+    addedItems.push({spell: $('#spellInput').val(), use: $('#useInput').val()});
 
     showSuccessMessage();
                 function showSuccessMessage() {
