@@ -10,7 +10,7 @@
       ", serif";
   }
 
-h1, h5
+h1, h5, p
 {
     font-family: var(--main-font);
     color: var(--primarycolor);
@@ -30,21 +30,34 @@ h1, h5
 
 .run
 {
-    position: relative;
+    position: absolute;
     color: var(--accentcolor);
     background-color: var(--primarycolor);
     border-radius: 1rem;
     padding: 0.5rem;
 }
 
+.d-none
+{
+    display: none !important;
+}
+
 #success
 {
-    display: none;
     position: fixed;
-    margin: auto;
-    background-color: var(--primarycolor);
-    padding: 5rem;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--primarycolor);
+    background-color: var(--accentcolor);
 }
+
 
 
 .container

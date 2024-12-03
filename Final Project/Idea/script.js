@@ -6,24 +6,28 @@ function getRandomNumber(min, max) {
 
 $('.run').on('mouseenter', function(){
     let left = getRandomNumber(100, 0);
-    let right = getRandomNumber(100, 0);
     let top = getRandomNumber(100, 0);
-    let bottom = getRandomNumber(100, 0);
 
     score += 1;
 
     $('.run').css({
         left: `${left}%`,
-        right: `${right}%`,
         top: `${top}%`,
-        bottom: `${bottom}%`
     });
 
     $('#score').text(score);
 })
 
 $('.run').on('click', function(){
+    console.log("BTN Clicked");
     
+    $('#success').removeClass("d-none");
+    $('#success').text(`You successfully clicked the button after ${score} tries`)
+
+    setTimeout(() => {
+        $('#success').addClass("d-none");
+        score = 0;
+    }, 3000);
 });
 
 
