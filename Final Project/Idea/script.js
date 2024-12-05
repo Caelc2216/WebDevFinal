@@ -38,7 +38,7 @@ $(".run").on("mouseenter", function () {
         left: `${left}%`,
         top: `${top}%`,
       });
-    }, 100);
+    }, 150);
   }
   if ($("#unfair").is(":checked")) {
       setTimeout(() => {
@@ -50,7 +50,7 @@ $(".run").on("mouseenter", function () {
     }
 
   $("#score").text(score);
-  $("#message").text(`${message[getRandomNumber(0, 3)]}`);
+  $(".run").text(`${message[getRandomNumber(0, 3)]}`);
 });
 
 
