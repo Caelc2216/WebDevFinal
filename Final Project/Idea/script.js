@@ -22,7 +22,7 @@ $(".run").on("mouseenter", function () {
         left: `${left}%`,
         top: `${top}%`,
       });
-    }, 300);
+    }, 200);
   }
   if ($("#easy").is(":checked")) {
     setTimeout(() => {
