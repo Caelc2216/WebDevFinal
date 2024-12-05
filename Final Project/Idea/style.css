@@ -10,7 +10,7 @@
       ", serif";
   }
 
-h1, h5, p
+h1, h5, p, h2, h4, label
 {
     font-family: var(--main-font);
     color: var(--primarycolor);
