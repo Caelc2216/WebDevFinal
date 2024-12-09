@@ -29,7 +29,7 @@
 .profileImg
 {
     margin-top: 2rem;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
     border-color: var(--secondarycolor);
     border-style: solid;
@@ -51,6 +51,7 @@
     color: var(--primarycolor);
     display: flex;
     justify-content: center;
+    margin-left: 3rem;
     margin-top: 2rem;
     width: 100%;
     /* background-color: #46AFAA; */
@@ -104,4 +105,10 @@ li
     font-size: 1rem;
     color: var(--primarycolor);
     
+}
+
+.date
+{
+    display: flex;
+    margin-left: 2rem;
 }
